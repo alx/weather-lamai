@@ -1,9 +1,11 @@
 #+title: Weather Lamai
 
-[[file:~/code/weather-lamai/public/cmp240_latest.gif][cmp240_latest.gif]]
+[[file:./cmp240_latest.gif]]
 
-Source: https://weather.tmd.go.th/cmp/cmp240_latest.gif
+Source: [[https://weather.tmd.go.th/cmp/cmp240_latest.gif][weather.tmd.go.th]]
 
-[[file:~/code/weather-lamai/public/cmp1.gif][Loop]]
+---
 
-Source: https://weather.tmd.go.th/cmp/cmp4.gif
+[[file:./cmp1.gif]]
+
+Source: [[https://weather.tmd.go.th/cmp/cmp4.gif][weather.tmd.go.th]]

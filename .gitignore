@@ -1,2 +1,4 @@
 .packages/
-public/
+
+public/*
+!public/.gitKeep
