@@ -1,11 +1,9 @@
 #+title: Weather Lamai
 
-[[file:./cmp240_latest.gif]]
+[[file:./THKT2.webp]]
+[[file:./THMP3.webp]]
+[[file:./THNN.webp ]]
+[[file:./THTP3.webp]]
+[[file:./THTR.webp ]]
 
-Source: [[https://weather.tmd.go.th/cmp/cmp240_latest.gif][weather.tmd.go.th]]
-
----
-
-[[file:./cmp1.gif]]
-
-Source: [[https://weather.tmd.go.th/cmp/cmp4.gif][weather.tmd.go.th]]
+Source: [[https://data.rainviewer.com/images/][rainviewer.com]
