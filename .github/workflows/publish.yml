@@ -1,6 +1,8 @@
 name: Publish to GitHub Pages
 
 on:
+  schedule:
+    - cron: "0 * * * *"
   push:
     branches:
       - main
@@ -21,5 +23,5 @@ jobs:
       - name: Publish generated content to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: gh-pages
+          branch: main
           folder: public
