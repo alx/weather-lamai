@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # THTP3 radar
 # https://data.rainviewer.com/images/THTP3/
