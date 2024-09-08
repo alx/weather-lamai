@@ -14,8 +14,18 @@ jobs:
       - name: Check out
         uses: actions/checkout@v1
 
-      - name: Install Emacs
-        run: sudo apt install emacs-nox imagemagick jq wget --yes
+      - name: Install dependencies
+        run: sudo apt install emacs-nox jq wget make build-essential automake --yes
+
+      - name: Install ImageMagick 7
+        run: |
+          git clone https://github.com/ImageMagick/ImageMagick.git /usr/local/src/ImageMagick
+          cd /usr/local/src/ImageMagick
+          ./configure
+          ./configure --with-modules
+          make
+          make -j 6
+          sudo make install
 
       - name: Build the site
         run: ./build.sh
