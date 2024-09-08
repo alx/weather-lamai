@@ -19,8 +19,8 @@ jobs:
 
       - name: Install ImageMagick 7
         run: |
-          git clone https://github.com/ImageMagick/ImageMagick.git /usr/local/src/ImageMagick
-          cd /usr/local/src/ImageMagick
+          git clone https://github.com/ImageMagick/ImageMagick.git /tmp/ImageMagick
+          cd /tmp/ImageMagick
           ./configure
           ./configure --with-modules
           make
