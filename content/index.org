@@ -6,4 +6,8 @@
 [[file:./THTP3.png]]
 [[file:./THTR.png]]
 
-Source: [[https://data.rainviewer.com/images/][rainviewer.com]]
+* Sources
+
+** rainviewer
+*** [[https://rainviewer.com][www]]
+*** [[https://data.rainviewer.com/images/][data]]
