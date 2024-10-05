@@ -10,8 +10,8 @@ convert_latest_radar_image () {
 
     RADAR_URL="https://data.rainviewer.com/images/${RADAR_NAME}/"
 
-    DEST_DIR="./static/${RADAR_NAME}_frames/"
-    DEST_DONE_FILE="./static/${RADAR_NAME}.gif"
+    DEST_DIR="./public/${RADAR_NAME}_frames/"
+    DEST_DONE_FILE="./public/${RADAR_NAME}.gif"
 
     # Create the destination directory for frames if it doesn't exist
     mkdir -p ${DEST_DIR}
