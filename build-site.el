@@ -31,8 +31,9 @@
              :publishing-function 'org-html-publish-to-html
              :publishing-directory "./public"
              :with-author nil           ;; Don't include author name
-             :with-creator t            ;; Include Emacs and Org versions in footer
-             :with-toc t                ;; Include a table of contents
+             :with-creator nil            ;; Include Emacs and Org versions in footer
+             :with-toc nil                ;; Include a table of contents
+             :with-footnotes nil
              :section-numbers nil       ;; Don't include section numbers
              :time-stamp-file nil)))    ;; Don't include time stamp in file
 

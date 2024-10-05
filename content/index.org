@@ -2,11 +2,11 @@
 
 | Radar Name | NOW              |
 |------------+------------------|
-| THKT2      | [[file:./THKT2_animated.gif]] |
-| THMP3      | [[file:./THMP3_animated.gif]] |
-| THNN       | [[file:./THNN_animated.gif]] |
-| THTP3      | [[file:./THTP3_animated.gif]] |
-| THTR       | [[file:./THTR_animated.gif]] |
+| THKT2      | [[file:./THKT2.gif]]          |
+| THMP3      | [[file:./THMP3.gif]] |
+| THNN       | [[file:./THNN.gif]] |
+| THTP3      | [[file:./THTP3.gif]] |
+| THTR       | [[file:./THTR.gif]] |
 
 * Sources
 
