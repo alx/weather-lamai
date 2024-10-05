@@ -1,10 +1,13 @@
 #+title: Weather Lamai
 
-[[file:./THKT2.png]]
-[[file:./THMP3.png]]
-[[file:./THNN.png]]
-[[file:./THTP3.png]]
-[[file:./THTR.png]]
+| Radar Name   | NOW           | -5min         | -10m          | -15m          | -20m          | -25m          |
+|--------------+---------------+---------------+---------------+---------------+---------------+---------------|
+| THKT2        | [[file:./THKT2.png]] | [[file:./THKT2_0.png]] | [[file:./THKT2_1.png]] | [[file:./THKT2_2.png]] | [[file:./THKT2_3.png]] | [[file:./THKT2_4.png]] |
+| THMP3          | [[file:./THMP3.png]] | [[file:./THMP3_0.png]] | [[file:./THMP3_1.png]] | [[file:./THMP3_2.png]] | [[file:./THMP3_3.png]] | [[file:./THMP3_4.png]] |
+| THNN           | [[file:./THNN.png]] | [[file:./THNN_0.png]] | [[file:./THNN_1.png]] | [[file:./THNN_2.png]] | [[file:./THNN_3.png]] | [[file:./THNN_4.png]] |
+| THTP3          | [[file:./THTP3.png]] | [[file:./THTP3_0.png]] | [[file:./THTP3_1.png]] | [[file:./THTP3_2.png]] | [[file:./THTP3_3.png]] | [[file:./THTP3_4.png]] |
+| THTR           | [[file:./THTR.png]] | [[file:./THTR_0.png]] | [[file:./THTR_1.png]] | [[file:./THTR_2.png]] | [[file:./THTR_3.png]] | [[file:./THTR_4.png]] |
+
 
 * Sources
 

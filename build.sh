@@ -2,6 +2,13 @@
 
 convert_latest_radar_image () {
 
+    # rotate image files
+    cp ./public/${RADAR_NAME}_3.png ./public/${RADAR_NAME}_4.png
+    cp ./public/${RADAR_NAME}_2.png ./public/${RADAR_NAME}_3.png
+    cp ./public/${RADAR_NAME}_1.png ./public/${RADAR_NAME}_2.png
+    cp ./public/${RADAR_NAME}_0.png ./public/${RADAR_NAME}_1.png
+    cp ./public/${RADAR_NAME}.png   ./public/${RADAR_NAME}_0.png
+
     RADAR_NAME=$1
     FILE_EXTENSION=$2
 
@@ -36,7 +43,6 @@ convert_latest_radar_image () {
     rm ${DEST_SOURCE_FILE}
 
 }
-
 # THTP3 radar - https://data.rainviewer.com/images/THTP3/
 convert_latest_radar_image "THTP3" "gif" "614x614+0+0" "614x614"
 
