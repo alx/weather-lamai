@@ -35,12 +35,6 @@ jobs:
         run: ./build.sh
         # run: ./build-imagemagick7.sh
 
-      - uses: actions/upload-artifact@v4
-        with:
-          name: generated_animated_gif
-          path: static/*.gif
-          retention-days: 1
-
       - name: Publish generated content to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:

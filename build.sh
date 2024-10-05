@@ -61,11 +61,11 @@ convert_latest_radar_image () {
 
 # THTP3 radar
 # https://data.rainviewer.com/images/THTP3/
-convert_latest_radar_image "THTP3" "gif" "614x614+0+0" "614x614" 100
+# convert_latest_radar_image "THTP3" "gif" "614x614+0+0" "614x614" 100
 
 # THKT2 radar
 # https://data.rainviewer.com/images/THKT2/
-convert_latest_radar_image "THKT2" "jpeg" "756x787+43+0" "756x787" 100
+# convert_latest_radar_image "THKT2" "jpeg" "756x787+43+0" "756x787" 100
 
 # THMP3 radar
 # https://data.rainviewer.com/images/THMP3/
@@ -73,11 +73,11 @@ convert_latest_radar_image "THMP3" "gif" "767x786+32+0" "767x786" 100
 
 # THNN radar
 # https://data.rainviewer.com/images/THNN/
-convert_latest_radar_image "THNN" "webp" "607x607+0+0" "614x614" 100
+# convert_latest_radar_image "THNN" "webp" "607x607+0+0" "614x614" 100
 
 # THTR radar
 # https://data.rainviewer.com/images/THTR/
-convert_latest_radar_image "THTR" "webp" "799x799+0+0" "799x799" 100
+# convert_latest_radar_image "THTR" "webp" "799x799+0+0" "799x799" 100
 
 # org content into website
 emacs -Q --script build-site.el
