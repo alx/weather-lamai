@@ -7,6 +7,7 @@ convert_latest_radar_image () {
     CROP_DIMENSION=$3
     RESIZE_DIMENSION=$4
     FRAME_DELAY=$5
+    FINAL_CROP=$6
 
     RADAR_URL="https://data.rainviewer.com/images/${RADAR_NAME}/"
 
@@ -46,6 +47,11 @@ convert_latest_radar_image () {
             -extent 450x450       \
             ${DEST_DONE_FRAME}
 
+        # Final crop
+        convert ${DEST_DONE_FRAME} \
+            -crop ${FINAL_CROP} \
+            ${DEST_DONE_FRAME}
+
         # Remove the source file to clean up
         rm ${DEST_SOURCE_FILE}
 
@@ -69,7 +75,7 @@ convert_latest_radar_image () {
 
 # THMP3 radar
 # https://data.rainviewer.com/images/THMP3/
-convert_latest_radar_image "THMP3" "gif" "767x786+32+0" "767x786" 100
+convert_latest_radar_image "THMP3" "gif" "767x786+32+0" "767x786" 100 "130x130+243+263"
 
 # THNN radar
 # https://data.rainviewer.com/images/THNN/
