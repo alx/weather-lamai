@@ -1,11 +1,11 @@
 #+title: Weather Lamai
 
-| Radar Name | NOW              |
-|------------+------------------|
-| THMP3      | [[file:./THMP3.gif]] |
+* THMP3
+[[file:./THMP3.gif]]
 
 * Sources
 
 ** rainviewer
 *** [[https://rainviewer.com][www]]
 *** [[https://data.rainviewer.com/images/][data]]
+** [[https://github.com/alx/weather-lamai][github]]
