@@ -50,8 +50,8 @@ convert_latest_radar_image () {
         # Final crop
         convert ${DEST_DONE_FRAME} \
             -crop ${FINAL_CROP} \
-            -repage             \
-            -resize 512x512     \
+            +repage             \
+            -resize 450x450       \
             ${DEST_DONE_FRAME}
 
         # Remove the source file to clean up
