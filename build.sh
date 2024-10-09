@@ -33,13 +33,13 @@ convert_latest_radar_image () {
         # wget -O ${DEST_SOURCE_FILE} ${IMG_URL_FROM_JSON}
 
         # Crop and resize each radar image
-        magick ${DEST_SOURCE_FILE}      \
+        convert ${DEST_SOURCE_FILE}      \
             -crop ${CROP_DIMENSION} +repage     \
             -resize ${RESIZE_DIMENSION} +repage \
             ${DEST_DONE_FRAME}
 
         # Resize to 450x450 and center
-        magick ${DEST_DONE_FRAME} \
+        convert ${DEST_DONE_FRAME} \
             -resize 450x450       \
             -background Black     \
             -gravity center       \
@@ -47,7 +47,7 @@ convert_latest_radar_image () {
             ${DEST_DONE_FRAME}
 
         # Final crop
-        magick ${DEST_DONE_FRAME} \
+        convert ${DEST_DONE_FRAME} \
             -crop ${FINAL_CROP} \
             +repage             \
             -resize 450x450       \
