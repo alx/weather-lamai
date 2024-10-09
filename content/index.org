@@ -1,7 +1,55 @@
 #+title: Weather Lamai
 
 * THMP3
-[[file:./THMP3.gif]]
+
+#+BEGIN_EXPORT html
+<video id="radarVideo" width="450" height="450" loop autoplay muted>
+    <source src="./THMP3.webm" type="video/webm">
+    Your browser does not support the video tag.
+</video>
+<div id="video-controls">
+    <button onclick="prevFrame()">&lt;&lt;</button>
+    <button onclick="nextFrame()">&gt;&gt;</button>
+    <input type="range" id="frame-slider" min="0" max="10" value="0" step="1" oninput="seekFrame()">
+</div>
+
+<script>
+    const video = document.getElementById('radarVideo');
+    const frameSlider = document.getElementById('frame-slider');
+    const frameRate = 1; // 1 frames per second
+    const frameDuration = 1000 / frameRate;
+
+    video.addEventListener('loadedmetadata', () => {
+        frameSlider.max = Math.floor(video.duration * frameRate);
+    });
+
+    video.addEventListener('timeupdate', () => {
+        frameSlider.value = Math.floor(video.currentTime * frameRate);
+    });
+            function prevFrame() {
+        video.pause();
+        video.currentTime = Math.max(0, video.currentTime - frameDuration / 1000);
+        updateSlider();
+    }
+
+    function nextFrame() {
+        video.pause();
+        video.currentTime = Math.min(video.duration, video.currentTime + frameDuration / 1000);
+        updateSlider();
+    }
+
+    function seekFrame() {
+        video.pause();
+        video.currentTime = frameSlider.value / frameRate;
+    }
+
+    function updateSlider() {
+        frameSlider.value = Math.floor(video.currentTime * frameRate);
+    }
+</script>
+#+END_EXPORT
+
+[[file:./THMP3.webm][Download THMP3.webm]]
 
 * Sources
 
