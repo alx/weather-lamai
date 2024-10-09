@@ -20,7 +20,7 @@ jobs:
           ref: main
 
       - name: Install dependencies
-        run: sudo apt install emacs-nox jq wget imagemagick --yes
+        run: sudo apt install emacs-nox jq wget imagemagick ffmpeg --yes
         # run: sudo apt install emacs-nox jq wget make build-essential automake --yes
 
       # - name: Install ImageMagick 7
