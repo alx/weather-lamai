@@ -1,2 +1,5 @@
 .packages/
-public/index.html
+public/*.html
+public/*.gif
+public/*.webm
+public/*_frames/

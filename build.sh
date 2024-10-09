@@ -59,7 +59,7 @@ convert_latest_radar_image () {
             ${DEST_DONE_FRAME}
 
         # Remove the source file to clean up
-        # rm ${DEST_SOURCE_FILE}
+        rm ${DEST_SOURCE_FILE}
 
         COUNTER=$((COUNTER+1))
     done
@@ -67,7 +67,7 @@ convert_latest_radar_image () {
     ffmpeg -y -framerate 1 -i ${DEST_DIR}${RADAR_NAME}_frame_%d.png -c:v libvpx-vp9 -b:v 1M -auto-alt-ref 0 ${DEST_DONE_FILE}
 
     # Clean up the frames directory
-    # rm -rf ${DEST_DIR}
+    rm -rf ${DEST_DIR}
 
 }
 
