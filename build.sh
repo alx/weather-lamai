@@ -38,11 +38,6 @@ convert_latest_radar_image () {
             -resize ${RESIZE_DIMENSION} +repage \
             ${DEST_DONE_FRAME}
 
-        echo "magick ${DEST_SOURCE_FILE}      \
-            -crop ${CROP_DIMENSION} +repage     \
-            -resize ${RESIZE_DIMENSION} +repage \
-            ${DEST_DONE_FRAME}"
-
         # Resize to 450x450 and center
         magick ${DEST_DONE_FRAME} \
             -resize 450x450       \
