@@ -30,7 +30,7 @@ convert_latest_radar_image () {
         DEST_DONE_FRAME="${DEST_DIR}${RADAR_NAME}_frame_${COUNTER}.png"
 
         # Download the image
-        # wget -O ${DEST_SOURCE_FILE} ${IMG_URL_FROM_JSON}
+        wget -O ${DEST_SOURCE_FILE} ${IMG_URL_FROM_JSON}
 
         # Crop and resize each radar image
         convert ${DEST_SOURCE_FILE}      \
