@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Check out
         uses: actions/checkout@v1
+        with:
+          ref: 'main'
 
       - name: Install dependencies
         run: sudo apt install emacs-nox jq wget imagemagick --yes
