@@ -33,6 +33,7 @@
              :base-directory "./content"
              :publishing-function 'org-html-publish-to-html
              :publishing-directory "./public"
+             :with-title nil           ;; Don't include author name
              :with-author nil           ;; Don't include author name
              :with-creator nil            ;; Include Emacs and Org versions in footer
              :with-toc nil                ;; Include a table of contents
