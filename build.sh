@@ -59,7 +59,7 @@ convert_latest_radar_image () {
         COUNTER=$((COUNTER+1))
     done
     # Create an animated GIF from the frames
-    ffmpeg -y -framerate 1 -i ${DEST_DIR}${RADAR_NAME}_frame_%d.png -c:v libvpx-vp9 -b:v 1M -auto-alt-ref 0 ${DEST_DONE_FILE}
+    ffmpeg -y -framerate 1 -i ${DEST_DIR}${RADAR_NAME}_frame_%d.png -pix_fmt yuv420p -c:v libvpx-vp9 -b:v 1M -auto-alt-ref 0 ${DEST_DONE_FILE}
 
     # Clean up the frames directory
     rm -rf ${DEST_DIR}
