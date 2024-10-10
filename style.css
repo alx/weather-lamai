@@ -1,0 +1,13 @@
+#video-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+}
+button {
+    margin: 0 5px;
+    padding: 5px 10px;
+}
+#frame-slider {
+    margin: 0 15px;
+}
