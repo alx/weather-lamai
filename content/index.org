@@ -1,6 +1,6 @@
 #+title: Weather Lamai
 
-* THMP3
+* Radar THMP3
 
 #+BEGIN_EXPORT html
 <video id="radarVideo" width="450" height="450" loop autoplay muted>
