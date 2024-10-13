@@ -7,12 +7,17 @@
     <source src="./THMP3.webm" type="video/webm">
     Your browser does not support the video tag.
 </video>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
 <div id="video-controls">
     <button onclick="prevFrame()">&lt;&lt;</button>
     <button onclick="nextFrame()">&gt;&gt;</button>
     <input type="range" id="frame-slider" min="0" max="10" value="0" step="1" oninput="seekFrame()">
 </div>
+#+END_EXPORT
 
+#+BEGIN_EXPORT html
 <script>
     const video = document.getElementById('radarVideo');
     const frameSlider = document.getElementById('frame-slider');
@@ -51,9 +56,54 @@
 
 [[file:./THMP3.webm][Download THMP3.webm]]
 
+* Weather forecasts
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=wind_stream&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=wind_barb&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=wind_vector&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=gust&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=air_temperature&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=surface_pressure&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=cloud_cover&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=relative_humidity&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=precipitation&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=significant_wave_height&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=primary_wave_height_direction&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=primary_wave_period&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=wind_wave_height_direction&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=wind_wave_period&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=swell_height_direction&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=swell_period&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=sea_surface_current&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=sea_surface_temperature&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=sea_ice_coverage&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
+[[https://weather.openportguide.de/cgi-bin/weather.pl/weather.png?var=sea_ice_thickness&lat=9.44&lon=100.12&unit=C&nx=660&ny=510&label=Lamai,%20Koh%20Samui&lang=en&display_type=contour&latrange=5&lonrange=5]]
+
 * Sources
 
 ** rainviewer
 *** [[https://rainviewer.com][www]]
 *** [[https://data.rainviewer.com/images/][data]]
-** [[https://github.com/alx/weather-lamai][github]]
+** Weather forecasts
+*** [[https://weather.openportguide.de/index.php/en/]]
+** weather-lamai
+*** [[https://github.com/alx/weather-lamai][github]]
+*** [[mailto:alx.girard@gmail.com][alx.girard@gmail.com]]
